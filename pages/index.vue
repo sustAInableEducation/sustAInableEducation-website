@@ -244,7 +244,7 @@ const milestones = [
     date: "10.12.2024",
     milestone:
       "Usability Tests durchgeführt, Prototyp der Quiz Generierung fertiggestellt",
-    completed: false,
+    completed: true,
   },
   {
     date: "24.01.2025",
