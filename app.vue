@@ -9,8 +9,7 @@
 <script setup>
 useHead({
   htmlAttrs: {
-    lang: 'de',
-    style: 'font-size: 13px'
+    lang: 'de'
   }
 })
 </script>
