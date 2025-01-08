@@ -160,7 +160,7 @@ import Card from "primevue/card";
 import Timeline from "primevue/timeline";
 
 useSeoMeta({
-  title: "sustAInalbeEducation",
+  title: "sustAInableEducation",
 });
 
 const sustainableWords = ["Study", "Think", "Be"];
@@ -253,7 +253,7 @@ const milestones = [
     date: "10.12.2024",
     milestone:
       "Usability Tests durchgeführt, Prototyp der Quiz Generierung fertiggestellt",
-    completed: false,
+    completed: true,
   },
   {
     date: "24.01.2025",

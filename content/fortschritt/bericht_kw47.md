@@ -1,7 +1,7 @@
 ---
 title: Fortschrittsbericht KW47
 date: 19.11.2024
-description: Bericht über die Fortschritte in den Bereichen Frontend, Backend, KI-Story und KI-Quiz für Kalenderwoche 47, einschließlich der Fertigstellung von Prototypen, Backend-Funktionen und der Vertiefung der Literaturrecherche.
+description: Bericht über die Fortschritte in den Bereichen Frontend, Backend, KI-Story und KI-Quiz für die Kalenderwoche 47, einschließlich der Fertigstellung von Prototypen, Backend-Funktionen und der Vertiefung der Literaturrecherche.
 ---
 ## Ausgangslage
 
@@ -21,7 +21,7 @@ Im Bereich der KI-Story wurde die Literaturrecherche abgeschlossen, wodurch eine
 
 ## Themenstellung KI-Quiz
 
-Die Literaturrecherche zur KI-gestützten Generierung von Quiz-Inhalten wurde weiter vertieft. Ein besonderer Fokus lag hierbei auf dem Themenbereich KI. 
+Die Literaturrecherche zur KI-gestützten Generierung von Quiz-Inhalten wurde weiter vertieft. Ein besonderer Fokus lag hierbei auf dem Themenbereich KI.
 
 ## Fazit
 
