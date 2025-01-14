@@ -32,12 +32,11 @@ Dieser Bericht umfasst die Fortschritte im Zeitraum vom 08.01.2025 bis 14.01.202
 ## Fortschritte bei der KI-Story
 
 - **Feature /LF210/ Story generieren**: Dieses Feature wurde erfolgreich abgeschlossen.
-
-  ![story_generieren](C:\Users\listl\Downloads\story_generieren.jpeg) 
+  ![Aktivitaetsdiagramm-Story-generieren](/img/kw03/story_generieren.jpeg)
 
 - **Feature /LF215/ Resultat generieren**: Auch dieses Feature wurde fertiggestellt, wodurch alle Must-Have-Features des AI-Services implementiert sind.
 
-  ![resultat_generieren](C:\Users\listl\Downloads\resultat_generieren.jpeg) 
+  ![Aktivitaetsdiagramm-Resultat-generieren](/img/kw03/resultat_generieren.jpeg) 
 
 - **Nice-To-Have-Feature Story-Bilder generieren**: Erste Arbeiten an der Generierung von Story-Bildern wurden begonnen.
 
