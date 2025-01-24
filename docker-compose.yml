@@ -4,8 +4,8 @@ services:
     networks:
       - web
     environment:
-      - VIRTUAL_HOST=sustainable-edu.at
-      - LETSENCRYPT_HOST=sustainable-edu.at
+      - VIRTUAL_HOST=sustainable-edu.at,www.sustainable-edu.at
+      - LETSENCRYPT_HOST=sustainable-edu.at,www.sustainable-edu.at
       - VIRTUAL_PORT=3000
     restart: unless-stopped
 
