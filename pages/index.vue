@@ -79,9 +79,15 @@
           <template #subtitle>{{ m.role }}</template>
           <template #content>
             <div class="flex justify-center items-center gap-2 mt-1.5">
-              <a :href="'mailto:' + m.email"><MdiIcon icon="mdiEmail" class="size-5" /></a>
-              <a :href="m.github" target="_blank"><MdiIcon icon="mdiGithub" class="size-5" /></a>
-              <a :href="m.linkedin" target="_blank"><MdiIcon icon="mdiLinkedin" class="size-5" /></a>
+              <a :href="'mailto:' + m.email"
+                ><MdiIcon icon="mdiEmail" class="size-5"
+              /></a>
+              <a :href="m.github" target="_blank"
+                ><MdiIcon icon="mdiGithub" class="size-5"
+              /></a>
+              <a :href="m.linkedin" target="_blank"
+                ><MdiIcon icon="mdiLinkedin" class="size-5"
+              /></a>
             </div>
           </template>
         </Card>
@@ -247,13 +253,13 @@ const milestones = [
     completed: true,
   },
   {
-    date: "24.01.2025",
+    date: "26.01.2025",
     milestone:
       "Beta-Version der Website, Backend und Prompts zur Generierung fertiggestellt",
     completed: false,
   },
   {
-    date: "11.02.2025",
+    date: "18.02.2025",
     milestone: "Testing und Fehlerbehebung abgeschlossen",
     completed: false,
   },
