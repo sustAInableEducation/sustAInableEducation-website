@@ -79,15 +79,18 @@
           <template #subtitle>{{ m.role }}</template>
           <template #content>
             <div class="flex justify-center items-center gap-2 mt-1.5">
-              <a :href="'mailto:' + m.email"
-                ><MdiIcon icon="mdiEmail" class="size-5"
-              /></a>
-              <a :href="m.github" target="_blank"
-                ><MdiIcon icon="mdiGithub" class="size-5"
-              /></a>
-              <a :href="m.linkedin" target="_blank"
-                ><MdiIcon icon="mdiLinkedin" class="size-5"
-              /></a>
+              <a :href="'mailto:' + m.email">
+                <MdiIcon icon="mdiEmail" class="size-5" />
+                <span class="sr-only">E-Mail an {{ m.name }}</span>
+              </a>
+              <a :href="m.github" target="_blank">
+                <MdiIcon icon="mdiGithub" class="size-5" />
+                <span class="sr-only">Github von {{ m.name }}</span>
+              </a>
+              <a :href="m.linkedin" target="_blank">
+                <MdiIcon icon="mdiLinkedin" class="size-5" />
+                <span class="sr-only">Linkedin von {{ m.name }}</span>
+              </a>
             </div>
           </template>
         </Card>

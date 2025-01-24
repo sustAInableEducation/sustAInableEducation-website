@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col">
     <header class="flex justify-center py-2 h-28">
       <nuxt-link to="/" class="flex gap-2 items-center">
-        <img src="/img/logo.svg" alt="Logo" class="size-24" />
+        <img src="/img/logo.svg" alt="sustAInableEducation Logo" class="size-24" />
         <div class="font-bold text-xl">sustAInableEducation</div>
       </nuxt-link>
     </header>
@@ -18,9 +18,10 @@
             target="_blank"
           >
             <MdiIcon icon="mdiGithub" class="size-10" />
+            <span class="sr-only">Github Organistation vom Projekt</span>
           </nuxt-link>
           <nuxt-link to="https://www.tgm.ac.at/" target="_blank">
-            <img src="/img/tgm-logo.png" alt="" class="h-10" />
+            <img src="/img/tgm-logo.png" alt="TGM" class="h-10" />
           </nuxt-link>
         </div>
         <div class="flex gap-1">
