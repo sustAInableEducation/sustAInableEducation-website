@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import Image from 'primevue/image';
+import Image from "primevue/image";
 
 useSeoMeta({
   title: "Showcase",
@@ -23,7 +23,9 @@ useSeoMeta({
 const images = ref([]);
 
 onMounted(() => {
-  const imageFiles = import.meta.glob("../public/img/showcase/*.{png,jpg,jpeg,svg}");
+  const imageFiles = import.meta.glob(
+    "../public/img/showcase/*.{png,jpg,jpeg,svg}"
+  );
   for (const path in imageFiles) {
     imageFiles[path]().then((module) => {
       images.value.push(path.replace("../public", ""));
