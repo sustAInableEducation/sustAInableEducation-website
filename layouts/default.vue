@@ -2,7 +2,11 @@
   <div class="min-h-screen flex flex-col">
     <header class="flex justify-center py-2 h-28">
       <nuxt-link to="/" class="flex gap-2 items-center">
-        <img src="/img/logo.svg" alt="sustAInableEducation Logo" class="size-24" />
+        <img
+          src="/img/logo.svg"
+          alt="sustAInableEducation Logo"
+          class="size-24"
+        />
         <div class="font-bold text-xl">sustAInableEducation</div>
       </nuxt-link>
     </header>
@@ -29,6 +33,10 @@
           <span>|</span>
           <span
             ><nuxt-link to="/impressum" class="link">Impressum</nuxt-link></span
+          >
+          <span>|</span>
+          <span
+            ><nuxt-link to="/showcase" class="link">Showcase</nuxt-link></span
           >
         </div>
         <div class="flex gap-1">
