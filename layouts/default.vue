@@ -28,16 +28,16 @@
             <img src="/img/tgm-logo.png" alt="TGM" class="h-10" />
           </nuxt-link>
         </div>
-        <div class="flex gap-1">
+        <div class="flex flex-col sm:flex-row gap-1 text-center sm:text-left">
           <span>©{{ new Date().getFullYear() }} sustAInableEducation</span>
-          <span>|</span>
-          <span
-            ><nuxt-link to="/impressum" class="link">Impressum</nuxt-link></span
-          >
-          <span>|</span>
-          <span
-            ><nuxt-link to="/showcase" class="link">Showcase</nuxt-link></span
-          >
+          <span class="hidden sm:inline">|</span>
+          <span>
+            <nuxt-link to="/impressum" class="link">Impressum</nuxt-link>
+          </span>
+          <span class="hidden sm:inline">|</span>
+          <span>
+            <nuxt-link to="/showcase" class="link">Showcase</nuxt-link>
+          </span>
         </div>
         <div class="flex gap-1">
           <Button
