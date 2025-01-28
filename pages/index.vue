@@ -259,7 +259,7 @@ const milestones = [
     date: "26.01.2025",
     milestone:
       "Beta-Version der Website, Backend und Prompts zur Generierung fertiggestellt",
-    completed: false,
+    completed: true,
   },
   {
     date: "18.02.2025",
