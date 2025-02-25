@@ -264,7 +264,7 @@ const milestones = [
   {
     date: "18.02.2025",
     milestone: "Testing und Fehlerbehebung abgeschlossen",
-    completed: false,
+    completed: true,
   },
 ];
 </script>
