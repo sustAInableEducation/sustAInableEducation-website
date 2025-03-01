@@ -18,13 +18,9 @@
           Web-App lernst du nicht nur, es macht sogar Spaß!
         </div>
         <div class="flex flex-wrap gap-2">
-          <Button
-            href="https://app.sustainable-edu.at"
-            label="Zur Web-App"
-            size="large"
-            disabled
-            class="!text-xl !p-4"
-          />
+          <NuxtLink to="https://app.sustainable-edu.at/" target="_blank">
+            <Button label="Zur Web-App" size="large" class="!text-xl !p-4" />
+          </NuxtLink>
           <Button as="router-link" to="#fortschritt" text class="!text-xl !p-4">
             Fortschrittsberichte
             <MdiIcon icon="mdiArrowRight" />
