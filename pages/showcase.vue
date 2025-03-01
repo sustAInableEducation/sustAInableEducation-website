@@ -6,9 +6,13 @@
       Einblick zu erhalten.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div v-for="(image, index) in images" :key="index">
-        <Image :src="image" :alt="'Screenshot ' + index" preview />
-      </div>
+      <Image
+        v-for="(image, index) in images"
+        :key="index"
+        :src="image"
+        :alt="'Screenshot ' + index"
+        preview
+      />
     </div>
   </div>
 </template>
@@ -54,7 +58,13 @@ onMounted(() => {
             return categoryIndexA - categoryIndexB;
           }
 
-          return a.localeCompare(b);
+          const filenameA = a.split("/").pop();
+          const filenameB = b.split("/").pop();
+
+          const numberA = extractNumber(filenameA);
+          const numberB = extractNumber(filenameB);
+
+          return numberA - numberB;
         });
       }
     });
@@ -77,5 +87,10 @@ function extractCategory(path) {
     }
   }
   return "other";
+}
+
+function extractNumber(filename) {
+  const match = filename.match(/\d+/);
+  return match ? parseInt(match[0]) : 0;
 }
 </script>
