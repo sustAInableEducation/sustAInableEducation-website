@@ -26,11 +26,56 @@ onMounted(() => {
   const imageFiles = import.meta.glob(
     "../public/img/showcase/*.{png,jpg,jpeg,svg}"
   );
+
+  const categoryOrder = [
+    "register",
+    "login",
+    "index",
+    "profile",
+    "overview",
+    "space",
+    "quiz",
+  ];
+
+  const allImages = [];
   for (const path in imageFiles) {
     imageFiles[path]().then((module) => {
-      images.value.push(path.replace("../public", ""));
-      images.value.sort();
+      allImages.push(path.replace("../public", ""));
+
+      if (allImages.length === Object.keys(imageFiles).length) {
+        images.value = allImages.sort((a, b) => {
+          const categoryA = extractCategory(a);
+          const categoryB = extractCategory(b);
+
+          const categoryIndexA = categoryOrder.indexOf(categoryA);
+          const categoryIndexB = categoryOrder.indexOf(categoryB);
+
+          if (categoryIndexA !== categoryIndexB) {
+            return categoryIndexA - categoryIndexB;
+          }
+
+          return a.localeCompare(b);
+        });
+      }
     });
   }
 });
+
+function extractCategory(path) {
+  const filename = path.split("/").pop();
+  for (const category of [
+    "register",
+    "login",
+    "index",
+    "profile",
+    "overview",
+    "space",
+    "quiz",
+  ]) {
+    if (filename.toLowerCase().startsWith(category)) {
+      return category;
+    }
+  }
+  return "other";
+}
 </script>
