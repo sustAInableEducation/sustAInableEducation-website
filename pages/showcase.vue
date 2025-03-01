@@ -10,7 +10,7 @@
         v-for="(image, index) in images"
         :key="index"
         :src="image"
-        :alt="'Screenshot ' + index"
+        :alt="getImageAltText(image)"
         preview
       />
     </div>
@@ -25,6 +25,24 @@ useSeoMeta({
 });
 
 const images = ref([]);
+
+const altTextMap = {
+  register: "Registrierungsseite: ",
+  login: "Login-Seite: ",
+  index: "Startseite: ",
+  profile: "Profilseite: ",
+  overview: "Übersichtsseite: ",
+  space: "Lernbereich: ",
+  quiz: "Quiz-Bereich: ",
+};
+
+const descriptionMap = {
+  1: "Hauptansicht",
+  2: "Detailansicht",
+  3: "Erweiterte Ansicht",
+  4: "Interaktive Elemente",
+  5: "Zusätzliche Funktionen",
+};
 
 onMounted(() => {
   const imageFiles = import.meta.glob(
@@ -92,5 +110,16 @@ function extractCategory(path) {
 function extractNumber(filename) {
   const match = filename.match(/\d+/);
   return match ? parseInt(match[0]) : 0;
+}
+
+function getImageAltText(imagePath) {
+  const category = extractCategory(imagePath);
+  const filename = imagePath.split("/").pop();
+  const number = extractNumber(filename);
+
+  const baseDescription = altTextMap[category] || "Bildschirmfoto: ";
+  const detailDescription = descriptionMap[number] || `Ansicht ${number}`;
+
+  return `${baseDescription}${detailDescription}`;
 }
 </script>
