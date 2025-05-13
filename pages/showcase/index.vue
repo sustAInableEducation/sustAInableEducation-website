@@ -46,7 +46,7 @@ const descriptionMap = {
 
 onMounted(() => {
   const imageFiles = import.meta.glob(
-    "../public/img/showcase/*.{png,jpg,jpeg,svg}"
+    "../../public/img/showcase/*.{png,jpg,jpeg,svg}"
   );
 
   const categoryOrder = [
@@ -62,7 +62,7 @@ onMounted(() => {
   const allImages = [];
   for (const path in imageFiles) {
     imageFiles[path]().then((module) => {
-      allImages.push(path.replace("../public", ""));
+      allImages.push(path.replace("../../public", ""));
 
       if (allImages.length === Object.keys(imageFiles).length) {
         images.value = allImages.sort((a, b) => {
